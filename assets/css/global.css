@@ -6,10 +6,17 @@
     
 }
 
+body{
+    background-color: #f6f8fc;
+    
+}
+
 /*Contéudo da página*/
 .content{
+    height: 100vh;
+    width: 100vw;
     padding: 1rem;  
-
+    background-color: #fff;
 }
 
 /*Titulo do contéudo*/
@@ -17,77 +24,17 @@
     margin: 0;
 }
 
-/*Lista de pokemons*/
-.pokemons{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+
+/* ======================== RESPONSIVIDADE ======================== */
+
+
+/*Contéudo da página - responsividade*/
+@media (min-width: 992px) {
+    .content{
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
     
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-}
-
-/*Itens da lista de pokemons*/
-.pokemon{
-    border-radius: 1rem;
-    padding: 1rem;
-    margin: 0.5rem;
-    
-    display: flex;
-    flex-direction: column;
-    
-    background-color: #49d0b0;
-    color: white;
-
-}
-
-/*Número do pokemon*/
-.pokemon .number{
-    color: black;
-    opacity: 0.3;
-    text-align: right;
-    font-size: 0.625rem;
-
-}
-
-.pokemon .name{
-    color: white;
-    margin: 0.25rem 0;
-    margin-bottom: 0;
-    
-}
-
-.pokemon .detail{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-/*Tipo do pokemon*/
-.pokemon .types{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-
-}
-
-.pokemon .types .type{
-    background-color: #61e1ca;
-    color: white;
-    padding: 0.25rem 0.5rem;
-    margin: 0.25rem 0;
-    font-size: 0.825rem;
-    border-radius: 1rem;
-
-}
-
-/*Tamanho da imagem do pokemon*/
-.pokemon .detail img{
-    border-style: none;
-    max-width: 100%;
-    height: 6rem;
-
 }
