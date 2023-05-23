@@ -55,7 +55,9 @@
 .pokemon .name{
     color: white;
     margin-bottom: 0.25rem;
+    padding: 0.625rem;
     text-transform: capitalize;
+    text-decoration: none;
     
 }
 

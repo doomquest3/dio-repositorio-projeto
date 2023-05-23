@@ -13,7 +13,7 @@
             pokemonList.innerHTML += pokemons.map((pokemon=>
                 `<li class="pokemon ${pokemon.type}">
                     <span class="number">#${pokemon.number}</span>
-                    <span class="name">${pokemon.name}</span>
+                    <a target="_blank" href="/Cardpokemon.html" class="name">${pokemon.name}</a>
 
                     <div class="detail">
                         <ol class="types">
