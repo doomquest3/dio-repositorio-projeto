@@ -2,9 +2,11 @@
     const pokemonList = document.getElementById('pokemonList');
 
     const loadMoreButton = document.getElementById('loadMore');
+    
     const maxRecord = 151;
     const limit = 10;
     let offset = 0;
+    
 
     function loadPokemonItens(offset, limit){
         /* O fetch retorna uma promise, um processo complexo para realizar uma requisição em um servidor. 
@@ -13,7 +15,7 @@
             pokemonList.innerHTML += pokemons.map((pokemon=>
                 `<li class="pokemon ${pokemon.type}">
                     <span class="number">#${pokemon.number}</span>
-                    <a target="_blank" href="/Cardpokemon.html" class="name">${pokemon.name}</a>
+                    <a id="pokeCard" onclick="exportPokemonNumber(${pokemon.number})" href="/Cardpokemon.html" class="name ${pokemon.type}">${pokemon.name}</a>
 
                     <div class="detail">
                         <ol class="types">
@@ -46,3 +48,10 @@
         }
         
     })
+
+
+    function exportPokemonNumber(numPokemon){
+        let getNumber = numPokemon;
+        localStorage.setItem('itemPokemon',getNumber);
+
+    }

@@ -1,1 +1,142 @@
 
+
+/*Barra de navegação da dashborad do pokemon*/
+.cabecalho{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 0 1.5%;
+    margin-bottom: 1rem;
+    
+    background-color: #77c850;
+
+}
+/*Botão para retornar a tela dos pokemons*/
+.returnButton{
+    text-decoration: none;
+    filter: brightness(1.1);
+    color: #fff;
+
+    padding: 0.5rem 0.8rem;
+    border-radius: 1rem;
+
+}
+
+.returnButton:hover{
+    transform: scale(1.1);
+}
+
+/*Card do pokemon escolhido*/
+.pokemonCard{
+    width: 50%;
+    height: 32rem;
+
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: space-around;
+    
+    box-shadow: -5px 10px 10px 1px rgba(0, 0, 0, 0.2),
+                 5px 10px 10px 1px rgba(0, 0, 0, 0.2);
+
+    border-radius: 1rem;
+
+    margin: 0 auto;
+
+    background: linear-gradient(0deg, #fff 50%, #77c850 50%);
+
+}
+
+/*imagem do pokemon*/
+.pokemonCard img{
+    border: none;
+    max-width: 100%;
+    height: 15rem;
+
+}
+
+/*Área de detalhes do pokemon*/
+.inforPokemon{
+    height: 50%;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    padding: 0.5rem;
+    
+}
+
+/*Nome do pokemon*/
+.inforPokemon h2{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    border-bottom: 0.125rem solid black ;
+    border-radius: 2rem;
+
+}
+
+.listaInfo{
+    width: 100%;
+    list-style: none;
+    text-align: left;
+    
+    
+}
+
+/*Espaçamento entre as informações do pokemon*/
+li.detalhes:not(:last-child){
+    margin-bottom: 1rem;
+    
+}
+
+/*Mudança na Cor do cabeçalho*/
+.normal:not(.pokemonCard){background-color: #a6a877;}
+.grass:not(.pokemonCard){ background-color: #77c850;}
+.fire:not(.pokemonCard){ background-color: #ee7f30;}
+.water:not(.pokemonCard){ background-color: #678fee;}
+.electric:not(.pokemonCard){ background-color: #f7cf2e;}
+.ice:not(.pokemonCard){ background-color: #98d5d7;}
+.ground:not(.pokemonCard){ background-color: #dfbf69;}
+.flying:not(.pokemonCard){ background-color: #a98ff0;}
+.poison:not(.pokemonCard){ background-color: #a040a0;}
+.fighting:not(.pokemonCard){ background-color: #bf3029;}
+.psychic:not(.pokemonCard){ background-color: #f65687;}
+.dark:not(.pokemonCard){ background-color: #725847;}
+.rock:not(.pokemonCard){ background-color: #b8a137;}
+.bug:not(.pokemonCard){ background-color: #adb720;}
+.ghost:not(.pokemonCard){ background-color: #6e5896;}
+.steel:not(.pokemonCard){ background-color: #b9b7cf;}
+.dragon:not(.pokemonCard){ background-color: #6f38f6;}
+.fairy:not(.pokemonCard){ background-color: #f9aec7;}
+
+/*mudança na cor do card*/
+
+.normal:not(.cabecalho, .returnButton){background: linear-gradient(0deg, #fff 50%, #a6a877 50%);}
+.grass:not(.cabecalho, .returnButton){ background: linear-gradient(0deg, #fff 50%, #77c850 50%);}
+.fire:not(.cabecalho, .returnButton){ background: linear-gradient(0deg, #fff 50%, #ee7f30 50%);}
+.water:not(.cabecalho, .returnButton){ background: linear-gradient(0deg, #fff 50%, #678fee 50%);}
+.electric:not(.cabecalho, .returnButton){ background: linear-gradient(0deg, #fff 50%, #f7cf2e 50%);}
+.ice:not(.cabecalho, .returnButton){ background: linear-gradient(0deg, #fff 50%, #98d5d7 50%);}
+.ground:not(.cabecalho, .returnButton){ background: linear-gradient(0deg, #fff 50%, #dfbf69 50%);}
+.flying:not(.cabecalho, .returnButton){ background: linear-gradient(0deg, #fff 50%, #a98ff0 50%);}
+.poison:not(.cabecalho, .returnButton){ background: linear-gradient(0deg, #fff 50%, #a040a0 50%);}
+.fighting:not(.cabecalho, .returnButton){ background: linear-gradient(0deg, #fff 50%, #bf3029 50%);}
+.psychic:not(.cabecalho, .returnButton){ background: linear-gradient(0deg, #fff 50%, #f65687 50%);}
+.dark:not(.cabecalho, .returnButton){ background: linear-gradient(0deg, #fff 50%, #725847 50%);}
+.rock:not(.cabecalho, .returnButton){ background: linear-gradient(0deg, #fff 50%, #b8a137 50%);}
+.bug:not(.cabecalho, .returnButton){ background: linear-gradient(0deg, #fff 50%, #adb720 50%);}
+.ghost:not(.cabecalho, .returnButton){ background: linear-gradient(0deg, #fff 50%, #6e5896 50%);}
+.steel:not(.cabecalho, .returnButton){ background: linear-gradient(0deg, #fff 50%, #b9b7cf 50%);}
+.dragon:not(.cabecalho, .returnButton){ background: linear-gradient(0deg, #fff 50%, #6f38f6 50%);}
+.fairy:not(.cabecalho, .returnButton){ background: linear-gradient(0deg, #fff 50%, #f9aec7 50%);}
+

@@ -19,29 +19,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 
     <!--Nosso CSS-->
-    <link rel="stylesheet" href="/assets/css/pokedash.css">
-    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/pokedash.css">
     <link rel="shortcut icon" href="#">
     
 </head>
-<body>
-    <header class="cabecalho">
-        <h1>PokeDash</h1>
-        <button>Return</button>
-    </header>
-    <section class="pokeBoard">
-        
-        <main class="pokemonCard" id="pokeCard">
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="foto de pokemon">
-            <!--Informações do pokemon-->
-            <div class="inforPokemon">
-                <ol class="listaTipos">
-                    <li class="detalhes">Número:1</li>
-                    <li class="detalhes">Espécie: Bulbassalto!</li>
-                    <li class="detalhes">Peso: Pesado!</li>
-                </ol>
-            </div>
-        </main>
-    </section>
+<body id="pokeCard">
+    <!-- Dashboard pokemon! -->
+    <script src="/assets/js/pokemon-model.js"></script>
+    <script src="/assets/js/poke-api.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/pokeCard.js"></script>
 </body>
 </html>
